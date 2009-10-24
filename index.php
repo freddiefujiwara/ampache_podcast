@@ -1,8 +1,8 @@
 <?php
 define('NO_SESSION','1');
-define('BASE_URL','http://music.zeg.la');
-define('TITLE','music.zeg.la');
-define('OWNER','zeg.la');
+define('BASE_URL','http://music.example.com');
+define('TITLE','music.example.com');
+define('OWNER','Fumikazu Fujiwara');
 require_once '../lib/init.php';
 $user         = new User($_REQUEST['user_id']);
 $playlist_ids = Playlist::get_users(intval($_REQUEST['user_id']));
